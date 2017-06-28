@@ -37,19 +37,37 @@
 	</div>
 	<script type="text/babel">
  	   class ToDoList extends React.Component {
- 	     render(){
- 	     	constructor(props){
+
+ 	     constructor(props){
  	     	   super(props);
  	     	   this.state = {
  	     	      items: {}
  	     	   }
  	     	}
+
+ 	     addItem(e){
+  			e.preventDefault();
+
+  			var itemsArray = this.state.items;
+  			itemsArray.push({
+  			   text: this._inputElement.value,
+  			   key: Date.now();
+  			});
+  			this.setState({
+  			  items : itemsArray
+  			});
+
+ 	     }
+
+ 	     render(){
  	     	
+
  	       return(
  	       	 <div className="toDoListMain">
  	       	   <div className="header">
- 	       	   		<form>
- 	       	   		   <input placeholder="enter task"></input>
+ 	       	   		<form onSumbit={this.addItem}>
+ 	       	   		   <input ref={ (a) => this._inputElement = a}
+ 	       	   		   placeholder="enter task"></input>
  	       	   		   <button type="submit">add</button>
  	       	   		</form>
  	       	   </div>
