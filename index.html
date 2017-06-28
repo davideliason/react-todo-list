@@ -38,7 +38,13 @@
 	<script type="text/babel">
  	   class ToDoList extends React.Component {
  	     render(){
-
+ 	     	constructor(props){
+ 	     	   super(props);
+ 	     	   this.state = {
+ 	     	      items: {}
+ 	     	   }
+ 	     	}
+ 	     	
  	       return(
  	       	 <div className="toDoListMain">
  	       	   <div className="header">
