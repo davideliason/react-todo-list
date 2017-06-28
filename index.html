@@ -38,11 +38,21 @@
 	<script type="text/babel">
 
 	   class ToDoItems extends React.Component {
-	   	  render(){
-	   	    return(
-	   	    	<div>
 
-	   	    	</div>
+	   	  render(){
+
+	   	    var todoEntries = this.props.entries;
+
+	   	    function createTasks(item){
+	   	      return <li key={item.key}>{item.text}</li>
+	   	    }
+
+	   	    var listItems = todoEntries.map(createTasks);
+
+	   	    return(
+	   	    	<ul className="theList">
+	   	    	  {listItems}
+	   	    	</ul>
 	   	    );
 	   	  }
 	   }
@@ -52,8 +62,10 @@
  	     constructor(props){
  	     	   super(props);
  	     	   this.state = {
- 	     	      items: {}
+ 	     	      items: [{key: "1",
+ 	     	       		   text: "hi"}]
  	     	   }
+ 	     	   this.addItem = this.addItem.bind(this);
  	     	}
 
  	     addItem(e){
@@ -75,13 +87,12 @@
  	       return(
  	       	 <div className="toDoListMain">
  	       	   <div className="header">
- 	       	   		<form onSumbit={this.addItem}>
- 	       	   		   <input ref={ (a) => this._inputElement = a}
- 	       	   		   placeholder="enter task"></input>
+ 	       	   		<form onSubmit={this.addItem}>
+ 	       	   		   <input ref={ (a) => this._inputElement = a} placeholder="enter task"></input>
  	       	   		   <button type="submit">add</button>
  	       	   		</form>
  	       	   </div>
- 	       	   <ToDoItems />
+ 	       	   <ToDoItems entries = {this.state.items} />
  	       	 </div>
  	       );
  	     }
