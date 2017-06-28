@@ -19,3 +19,5 @@ $ cd react-todo-list
 ````
 3. open your browser to the index.html file within that folder
 4. Enjoy!
+
+![react-todo](./react-todo.png?raw=true "react-todo-list")
