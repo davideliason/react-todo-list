@@ -36,6 +36,17 @@
 
 	</div>
 	<script type="text/babel">
+
+	   class ToDoItems extends React.Component {
+	   	  render(){
+	   	    return(
+	   	    	<div>
+
+	   	    	</div>
+	   	    );
+	   	  }
+	   }
+
  	   class ToDoList extends React.Component {
 
  	     constructor(props){
@@ -51,7 +62,7 @@
   			var itemsArray = this.state.items;
   			itemsArray.push({
   			   text: this._inputElement.value,
-  			   key: Date.now();
+  			   key: Date.now()
   			});
   			this.setState({
   			  items : itemsArray
@@ -60,7 +71,6 @@
  	     }
 
  	     render(){
- 	     	
 
  	       return(
  	       	 <div className="toDoListMain">
@@ -71,6 +81,7 @@
  	       	   		   <button type="submit">add</button>
  	       	   		</form>
  	       	   </div>
+ 	       	   <ToDoItems />
  	       	 </div>
  	       );
  	     }
