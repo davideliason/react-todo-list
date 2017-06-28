@@ -5,6 +5,24 @@
 	<script src="https://fb.me/react-15.0.0.js"></script>
     <script src="https://fb.me/react-dom-15.0.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <style>
+       body {
+       	  background-color: yellow;
+       	  padding: 50px;
+       }
+       .toDoListMain .header input{
+       		padding: 10px;
+       		font-size: 16px;
+       		border: 2px solid blue;
+       }
+      .toDoListMain .header button{
+      	padding: 14px;
+      	background-color: blue;
+      	opacity: 0.9;
+      	border-radius: 25%;
+      	color: white;
+      }
+    </style>
 </head>
 <body>
 
@@ -12,7 +30,24 @@
 
 	</div>
 	<script type="text/babel">
+ 	   class ToDoList extends React.Component {
+ 	     render(){
 
+ 	       return(
+ 	       	 <div className="toDoListMain">
+ 	       	   <div className="header">
+ 	       	   		<form>
+ 	       	   		   <input placeholder="enter task"></input>
+ 	       	   		   <button type="submit">add</button>
+ 	       	   		</form>
+ 	       	   </div>
+ 	       	 </div>
+ 	       );
+ 	     }
+ 	   };
+
+
+	   ReactDOM.render(<ToDoList />,document.querySelector('#container'));
 	</script>
 </body>
 </html>
