@@ -6,7 +6,7 @@
 This is a simple app to keep track of todo tasks
 
 #### What does it use?
-React.js
+React.js using react-router, state, nested components, inline styling
 
 #### How do I run this?
 1. clone the repo
