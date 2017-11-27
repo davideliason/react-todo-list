@@ -21,3 +21,5 @@ $ cd react-todo-list
 4. Enjoy!
 
 ![react-todo](./react-todo.png?raw=true "react-todo-list")
+
+[Return to Portfolio](https://davideliason.github.io/)
