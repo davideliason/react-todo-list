@@ -2,6 +2,8 @@
 ## [David Eliason](http://www.davethemaker.com)
 ### June 28, 2017
 
+[Return to Portfolio](https://davideliason.github.io/)
+
 #### What is this?
 This is a simple app to keep track of todo tasks
 
