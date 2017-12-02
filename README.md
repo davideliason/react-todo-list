@@ -1,5 +1,5 @@
 # ToDo List using React.js
-## [David Eliason](http://www.deliason.com)
+## [David Eliason](http://www.davethemaker.com)
 ### June 28, 2017
 
 #### What is this?
