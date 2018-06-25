@@ -26,7 +26,7 @@ $ cd react-todo-list
 
 ![react-todo](./react-todo.png?raw=true "react-todo-list")
 
-##[Heroku](https://browser-react-todolist.herokuapp.com/)
+### [Heroku](https://browser-react-todolist.herokuapp.com/)
 
 [Return to Portfolio](https://davideliason.github.io/)
 
