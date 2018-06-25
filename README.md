@@ -10,7 +10,7 @@ This is a simple app to keep track of todo tasks. It uses browser Babel to trans
 #### What does it use?
 React.js using react-router, state, nested components, inline styling
 
-#### How do I run this?
+#### How do I run this locally?
 1. clone the repo
 ````
 $ git clone https://github.com/davideliason/react-todo-list
@@ -23,6 +23,8 @@ $ cd react-todo-list
 4. Enjoy!
 
 ![react-todo](./react-todo.png?raw=true "react-todo-list")
+
+##[Heroku](https://browser-react-todolist.herokuapp.com/)
 
 [Return to Portfolio](https://davideliason.github.io/)
 
