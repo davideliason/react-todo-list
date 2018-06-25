@@ -2,9 +2,9 @@
 ## [David Eliason](http://www.davethemaker.com)
 ### June 28, 2017
 
-###[Return to Portfolio](https://davideliason.github.io/)
+### [Return to Portfolio](https://davideliason.github.io/)
 
-###[Heroku](https://browser-react-todolist.herokuapp.com/)
+### [Heroku](https://browser-react-todolist.herokuapp.com/)
 
 #### What is this?
 This is a simple app to keep track of todo tasks. It uses browser Babel to translate React. Of interest it uses ref attribute to clear input value, passes values top-down in one-way data flow.
