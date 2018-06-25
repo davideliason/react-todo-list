@@ -10,7 +10,7 @@
 This is a simple app to keep track of todo tasks. It uses browser Babel to translate React. Of interest it uses ref attribute to clear input value, passes values top-down in one-way data flow.
 
 #### What does it use?
-React.js using react-router, state, nested components, inline styling
+React.js using state, nested components, inline styling
 
 #### How do I run this locally?
 1. clone the repo
