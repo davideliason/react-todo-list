@@ -5,7 +5,7 @@
 [Return to Portfolio](https://davideliason.github.io/)
 
 #### What is this?
-This is a simple app to keep track of todo tasks
+This is a simple app to keep track of todo tasks. It uses browser Babel to translate React. Of interest it uses ref attribute to clear input value, passes values top-down in one-way data flow.
 
 #### What does it use?
 React.js using react-router, state, nested components, inline styling
@@ -25,3 +25,5 @@ $ cd react-todo-list
 ![react-todo](./react-todo.png?raw=true "react-todo-list")
 
 [Return to Portfolio](https://davideliason.github.io/)
+
+[Resource](https://medium.com/@saadshaikh100/how-to-deploy-your-static-website-on-heroku-69f120626b12)
